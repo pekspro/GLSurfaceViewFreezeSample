@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <android.opengl.GLSurfaceView
+        android:id="@+id/OpenGlGameGraphics"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_first_with_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next (with animation)" />
+
+        <Button
+            android:id="@+id/button_first_no_animation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next (no animation)" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you navigate to the next page with animation, and then switches to a different app, and back to this one this will app freeze." />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>
