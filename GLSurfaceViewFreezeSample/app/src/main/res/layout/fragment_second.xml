@@ -5,10 +5,15 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
-    <android.opengl.GLSurfaceView
-        android:id="@+id/OpenGlGameGraphics"
+    <FrameLayout
+        android:id="@+id/OpenGlContainer"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:layout_height="fill_parent">
+        <android.opengl.GLSurfaceView
+            android:id="@+id/OpenGlGameGraphics"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
